@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillFlow Widget Demo</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #f7fafc;
+        }
+        h1 { color: #1a202c; }
+        h2 { color: #2d3748; margin-top: 40px; }
+        .demo-row {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        pre {
+            background: #1a202c;
+            color: #e2e8f0;
+            padding: 16px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-size: 14px;
+        }
+        code { font-family: 'Fira Code', monospace; }
+        .dark-bg {
+            background: #1a1a2e;
+            padding: 24px;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨 SkillFlow Embeddable Widget</h1>
+    <p>Drop a beautiful skill card into any webpage, blog, or documentation. Each card is a mini-billboard for SkillFlow.</p>
+
+    <h2>Light Theme</h2>
+    <div class="demo-row">
+        <div class="skillflow-card" data-skill="credit-optimizer" data-theme="light"></div>
+        <div class="skillflow-card" data-skill="fast-navigation" data-theme="light"></div>
+    </div>
+
+    <h2>Dark Theme</h2>
+    <div class="demo-row dark-bg">
+        <div class="skillflow-card" data-skill="skill-creator" data-theme="dark"></div>
+        <div class="skillflow-card" data-skill="demo" data-theme="dark"></div>
+    </div>
+
+    <h2>Usage</h2>
+    <pre><code>&lt;!-- Add this where you want the card --&gt;
+&lt;div class="skillflow-card" data-skill="credit-optimizer" data-theme="light"&gt;&lt;/div&gt;
+
+&lt;!-- Add this before &lt;/body&gt; --&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/rafsilva85/skillflow-widget@main/skillflow-embed.js"&gt;&lt;/script&gt;</code></pre>
+
+    <h2>For GitHub READMEs (Markdown Badge)</h2>
+    <pre><code>[![SkillFlow Skill](https://img.shields.io/badge/SkillFlow-Credit_Optimizer-4ECDC4?style=for-the-badge&logo=data:image/svg+xml;base64,...)](https://skillflow.builders/skill/credit-optimizer)</code></pre>
+
+    <script src="skillflow-embed.js"></script>
+</body>
+</html>
